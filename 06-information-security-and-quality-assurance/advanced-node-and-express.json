@@ -119,7 +119,7 @@
         },
         {
           "text": "Mongodb 适当地引入包括 ObjectId",
-          "testString": "getUserInput => $.get(getUserInput('url')+ '/_api/server.js') .then(data => { assert.match(data, /require.*(\"|')mongodb(\"|')/gi, 'You should have required mongodb'); assert.match(data, /new ObjectID.*id/gi, '虽然 block 被注释掉了，当我们添加数据库时，你需要 new ObjectID(id)'); }, xhr => { throw new Error(xhr.statusText); })"
+          "testString": "getUserInput => $.get(getUserInput('url')+ '/_api/server.js') .then(data => { assert.match(data, /require.*(\"|')mongodb(\"|')/gi, 'You should have required mongodb'); assert.match(data, /new ObjectID.*id/gi, '虽然代码块被注释掉了，当我们添加数据库时，你需要 new ObjectID(id)'); }, xhr => { throw new Error(xhr.statusText); })"
         }
       ],
       "solutions": [],
